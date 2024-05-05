@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="light-theme" id="calculator">
+      <section id="salam">
+        <label class="switch">
+          <input
+            onclick="themeSwitch()"
+            id="theme-toggle"
+            type="checkbox"
+            checked
+          />
+          <span class="slider round"></span>
+        </label>
+      </section>
+
+      <section id="result">
+        <label id="lbl1" type="text" id="user-input" class="lblDesign">1</label>
+      </section>
+      <section  id="user-input">
+        <label id="lbl2" type="text" id="user-input" class="lblDesign">0</label>
+      </section>
+      <section class="calc-buttons">
+        <section class="container">
+          <button id="btn1" class="myButton" style="color: deepskyblue; font-weight: 600;">C</button>
+          <button id="btn2" class="myButton">%</button>
+          <button id="btn3" class="myButton">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button id="btn4" type="button" class="myButton" style="color: deepskyblue;">/</button>
+
+        </section>
+
+        <section class="container">
+          <button onclick="enteringNums(id)"  id="btn5" class="myButton"  type="button">7</button>
+          <button onclick="enteringNums(id)"  id="btn6" class="myButton"  type="button">8</button>
+          <button  onclick="enteringNums(id)" id="btn7" class="myButton"  type="button">9</button>
+          <button id="btn8" class="myButton"  type="button" style="color:deepskyblue; padding-top: 10px;">*</button>
+        </section>
+
+        <section class="container">
+          <button onclick="enteringNums(id)"  id="btn9" class="myButton"  type="button">4</button>
+          <button onclick="enteringNums(id)"  id="btn10" class="myButton"  type="button">5</button>
+          <button onclick="enteringNums(id)"  id="btn11" class="myButton"  type="button">6</button>
+          <button id="btn12" class="myButton"  type="button" style="color:deepskyblue; padding-top: 10px;">-</button>
+        </section>
+
+        <section class="container">
+          <button onclick="enteringNums(id)"  id="btn13" class="myButton"  type="button">1</button>
+          <button onclick="enteringNums(id)"  id="btn14" class="myButton"  type="button">2</button>
+          <button  onclick="enteringNums(id)" id="btn15" class="myButton"  type="button">3</button>
+          <button id="btn16" class="myButton"  type="button" style="color:deepskyblue; padding-top: 10px;">+</button>
+        </section>
+
+
+
+        <section class="container">
+          <button  onclick="enteringNums(id)"  id="btn17" class="myButton"  type="button">00</button>
+          <button onclick="enteringNums(id)"  id="btn18" class="myButton"  type="button">0</button>
+          <button id="btn19" class="myButton"  type="button">.</button>
+          <button id="btn20" class="myButton"  type="button" style="color:deepskyblue; padding-top: 10px;">=</button>
+        </section>
+
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/193bc7c6b3.js" crossorigin="anonymous"></script>
+  </body>
+</html>
